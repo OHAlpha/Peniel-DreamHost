@@ -14,8 +14,8 @@ default: &default
   encoding: utf8
   pool: 5
   username: penielsda_org_d
-  password:
-  host: mysql.peniel.org
+  password: develope
+  host: mysql.penielsda.org
 
 development:
   <<: *default
