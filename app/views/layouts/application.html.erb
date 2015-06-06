@@ -1,86 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Peniel Seventh-day Adventist Church (Fort Myers)&nbsp;Fort Myers&nbsp;FL</title>
-  <meta name="Description" content="Trying to find a church? Visit Peniel Seventh-day Adventist<font size=3><sup>&reg;</sup></font> Church (Fort Myers), your local Adventist church in Fort Myers FL and experience a Christian church community based on the beliefs of the Seventh day Adventist Church. Consider this SDA church your new Christian family.">
-  <meta name="KeyWords" content="Christian churches Fort Myers FL, Seventh-day Adventist<font size=3><sup>&reg;</sup></font> churches, seventh day adventists, 7th day adventists, local churches, adventism, community churches, sda churches, church directory, find a church">
-  <meta name="geo.position" content="26.647453;-81.858831">
-  <!--%= stylesheet_link_tag "goyim.css", media: "all" %-->
-  <!--%= stylesheet_link_tag "bootstrap.min.css", media: "all" %-->
+  <title>Playground</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= yield :script %>
-  <%= yield :style %>
 </head>
-<body id="body" class="su_bootstrap_safe">
-	<div id="body">
-		<header>
-					<div id="header-container" class="container">
-				<div id="header-container-row" class="row">
-					<div id="sdaLogo" class="col-xs-1"></div><!-- end #logo -->
-					<div id="sitename" class="col-sm-7 col-xs-10">
-						<h1>Peniel Seventh-day Adventist<font size=3><sup>&reg;</sup></font> Church (Fort Myers)</h1>
-						<h2 class="sitenameSubtitle">2663 2nd St, Fort Myers, FL, 33916-2628</h2>
-						<h2 class="sitenameSubtitle"><%= notice %></h2>
-					</div><!-- end #sitename -->
-					<div id="search" class="col-sm-4 col-xs-12"></div><!-- end #search -->
-				</div><!-- end #header-container-row -->
-			</div><!-- end #header-container -->
-				</header>
-			<div id="banner">
-		<div id="banner-container" class="container">
-			<div id="banner-container-row" class="row">
-				<div id="banner-image" class="col-sm-12 acc">
-				</div><!-- end #banner-image -->
-			</div><!-- end #banner-container-row -->
-		</div><!-- end #banner-container -->
-								<div id="navigation">
-				<div id="navigation-container" class="container">
-					<div id="navigation-container-row" class="row">
-						<div id="navigation-span" class="col-sm-12">
-							<%= link_to 'Home', root_path, target: '_self', class: 'navlinks' %>  <%= link_to 'About Us', about_path, target: '_self', class: 'navlinks' %> <%= link_to 'News', news_index_path, target: '_self', class: 'navlinks' %> <%= link_to 'Bible Study', bible_index_path, target: '_self', class: 'navlinks' %> <%= link_to 'Media', media_path, target: '_self', class: 'navlinks' %> <%= link_to 'Resource Center', resources_path, target: '_self', class: 'navlinks' %> <a href="http://www.adventistbookcenter.com" target="_blank" class="navlinks">Bookstore</a> <%= link_to 'Contact Us', departments_path, target: '_self', class: 'navlinks' %>
-						</div><!-- end #navigation-span -->
-					</div><!-- end #navigation-container-row -->
-				</div><!-- end #navigation-container -->
-			</div>
-		
-			</div><!-- end #banner -->
+<body>
 
-<div id="content">
-		<div id="content-container" class="container">
-			<div id="content-container-row" class="row">
-  <%= yield %>
-				<div class="col-sm-4">
-				    <div id="sidebar" class="col-sm-12"><!-- sidebar --><!--span class="DigestTitle">The Bible Says</span><br><table width=100% border=0><tr><td valign='top'><a href='http://www.e-gracenotes.org/article.php?id=2733' target='_top' class=FeedLink><img src='<%= asset_path 'no_headlights_thumb2.jpg' %>' border=0 nosave></a></a></td><td valign='top'><a href='http://www.e-gracenotes.org/article.php?id=2733' target='_top' class=FeedLink><span class='FeedTitle'>No Headlights!</span><br><span class='FeedDescription'>I was driving in a city a couple of hours from my home. I’d&nbsp;&raquo;</span></a></td></tr></table><table width=100% border=0><tr><td valign='top'><a href='http://www.e-gracenotes.org/article.php?id=95' target='_top' class=FeedLink><img src='<%= asset_path 'pump_fill_thumb2.jpg' %>' border=0 nosave></a></a></td><td valign='top'><a href='http://www.e-gracenotes.org/article.php?id=95' target='_top' class=FeedLink><span class='FeedTitle'>Drain and Fill</span><br><span class='FeedDescription'>Growing up my father owned a gas station and my two brothers and&nbsp;&raquo;</span></a></td></tr></table><table width=100% border=0><tr><td valign='top'><a href='http://www.e-gracenotes.org/article.php?id=3829' target='_top' class=FeedLink><img src='<%= asset_path 'embracing_struggle_thumb2.jpg' %>' border=0 nosave></a></a></td><td valign='top'><a href='http://www.e-gracenotes.org/article.php?id=3829' target='_top' class=FeedLink><span class='FeedTitle'>Embracing Struggle</span><br><span class='FeedDescription'>"We are pressed on every side by troubles, but we are not&nbsp;&raquo;</span></a></td></tr></table--></div>
-				</div><!-- end #content-right-span -->
-			</div><!-- end #content-container-row -->
-		</div><!-- end #content-container -->
-</div>
-  <div id="params">
-    <%= debug(params) %>
-<pre class="debug_dump">
-Request Environment: 
-    <%= request.env['HTTP_USER_AGENT'] %>
-    <%= request.env['REMOTE_ADDR'] %>
-    <%= request.env['REMOTE_HOST'] %>
-</pre>
-  </div>
-		<div id="footer">
-			<div id="footer-container" class="container">
-				<div id="footer-container-row" class="row">
-					<div id="footer-span" class="col-sm-12">
-					  <br>
-  <span class='footer'><b><%= link_to 'Peniel SDA', root_path %></b></span><br>
-  <span class='footer'><% if @isuser %><%= link_to 'User Dashboard', dashboard_user_path, class: 'footer' %></span><br>
-  <span class='footer'><% if @ismaintainer %><%= link_to 'Maintainer Dashboard', dashboard_maintainer_path, class: 'footer' %><% end %></span><br>
-  <span class='footer'><% if @isdeveloper %><%= link_to 'Developer Dashboard', dashboard_developer_path, class: 'footer' %><% else %><%= link_to 'Become A Developer', apply_developer_path, class: 'footer' %><% end %></span><br>
-  <span class='footer'><% if @isadmin %><%= link_to 'Administrator Dashboard', dashboard_administrator_path, class: 'footer' %><% end %><% else %><%= link_to 'User Log In', login_user_path, class: 'footer' %><% end %></span>
-					</div><!-- end #footer-span -->
-				</div><!-- end #footer-container-row -->
-			</div><!-- end #footer-container -->
-		</div><!-- end #footer -->
-	</div> <!-- close #body -->
+<%= yield %>
 
 </body>
 </html>
