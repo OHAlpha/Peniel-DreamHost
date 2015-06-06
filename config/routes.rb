@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   end
   
   # visitor and user functionality
+  get 'home', to: 'application#home'
   root 'application#home'
   get 'about', to: 'application#about', as: :about
   scope module: 'visitors' do
